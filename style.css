@@ -421,3 +421,23 @@ a, button { cursor: pointer; }
     .project-card { flex-direction: column; }
     .project-image { width: 100%; height: 140px; }
 }
+
+/* ================================================================
+   17. LINKS NOS CARDS DE EXPERIÊNCIA
+   ================================================================ */
+/* Garante que o link não quebre o efeito hover do card */
+.experience-card a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+/* Mantém o efeito de hover mesmo com o link */
+.experience-card a:hover .card-title {
+    color: var(--color-accent);
+}
+
+.experience-card a:hover .external-icon {
+    opacity: 1;
+    transform: translate(0, 0);
+}
